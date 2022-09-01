@@ -1,162 +1,232 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html
+  lang="fr"
+  class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio d'Antoine Gogce</title>
+    <title>Portfolio Antoine Gogce</title>
 
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="links">
-        <a href="#portfolio">portfolio</a>
-        <a href="mailto:antoinegogceapb@hotmail.fr">contact</a>
-      </div>
-      <div class="wrapper">
-        <div class="appear" id="h1-wrapper">
-          <!-- classe pour les éléments qui vont apparaitre  -->
-          <h1>Antoine Gogce</h1>
+    <div data-scroll-container>
+      <header data-scroll>
+        <div class="links">
+          <a href="#portfolio" data-scroll-to>portfolio</a>
+          <a href="mailto:antoinegogceapb@hotmail.fr">contact</a>
         </div>
-      </div>
-      <div class="wrapper">
-        <div class="appear" id="h2-1">
-          <h2>Développeur</h2>
-        </div>
-        <div class="appear" id="h2-2">
-          <h2>Web</h2>
-        </div>
-      </div>
-      <div class="scroll-wrapper">
-        <p>please scroll</p>
-      </div>
-    </header>
-
-    <section class="about">
-      <div class="img1-wrapper">
-        <div class="img img1"></div>
-      </div>
-      <div class="h2-wrapper">
-        <h2>À propos</h2>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-        fugiat magnam! Officia, dolore sequi alias exercitationem voluptate
-        deserunt pariatur, illum molestiae asperiores esse beatae? Non sed
-        soluta deserunt magnam impedit ad nulla laudantium sequi fugit earum
-        consequatur assumenda velit, voluptatum quae tempora delectus odit? Id
-        excepturi, ipsa consequatur qui quisquam, dolorem vel voluptate a
-        dolores quibusdam reiciendis est enim illum rem, necessitatibus eaque
-        commodi odit. Consectetur laborum reprehenderit minus ipsa deserunt
-        delectus quam corporis optio! Eveniet officia repellendus illum at.
-      </p>
-    </section>
-
-    <div class="line-wrapper">
-      <div class="line"></div>
-    </div>
-
-    <section class="skills">
-      <h2 class="title">
-        <span>E</span>
-        <span>x</span>
-        <span>p</span>
-        <span>e</span>
-        <span>r</span>
-        <span>t</span>
-        <span>i</span>
-        <span>s</span>
-        <span>e</span>
-      </h2>
-      <div class="wrapper">
-        <div class="appear">
-          <p>JavaScript</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="appear">
-          <p>React</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="appear">
-          <p>PHP</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="appear">
-          <p>Python</p>
-        </div>
-      </div>
-    </section>
-    <div class="line-wrapper">
-      <div class="line"></div>
-    </div>
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="title">
-        <span>P</span>
-        <span>o</span>
-        <span>r</span>
-        <span>t</span>
-        <span>f</span>
-        <span>o</span>
-        <span>l</span>
-        <span>i</span>
-        <span>o</span>
-      </h2>
-      <div class="project-container">
-        <div class="project" id="p1">
-          <img src="./assets/img/projet-1.jpg" alt="projet 1" />
-          <div class="project-infos">
-            <a href="https://www.google.com">Projet 1 </a>
-            <p>2022</p>
+        <div class="wrapper">
+          <div data-scroll class="appear" id="h1-wrapper">
+            <h1 data-scroll data-scroll-speed="4" data-scroll-position="left">
+              Antoine Gogce
+            </h1>
           </div>
         </div>
-        <div class="project" id="p2">
-          <img src="./assets/img/projet-2.jpg" alt="projet 2" />
-          <div class="project-infos">
-            <a href="https://www.google.com">Projet 2 </a>
-            <p>2022</p>
+        <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
+          <div data-scroll class="appear" id="h2-1">
+            <h2
+              data-scroll
+              data-scroll-speed="6"
+              data-scroll-direction="horizontal"
+              data-scroll-position="left"
+            >
+              Développeur
+            </h2>
           </div>
         </div>
-      </div>
-      <div class="project" id="p3">
-        <img src="./assets/img/projet-3.jpg" alt="projet 3" />
-        <div class="project-infos">
-          <a href="https://www.google.com">Projet 3 </a>
-          <p>2022</p>
+        <div class="wrapper">
+          <div data-scroll class="appear" id="h2-2">
+            <h2
+              data-scroll
+              data-scroll-speed="-6"
+              data-scroll-direction="horizontal"
+              data-scroll-position="left"
+            >
+              Web
+            </h2>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <div class="line-wrapper">
-      <div class="line"></div>
-    </div>
-
-    <footer>
-      <div class="wrapper">
-        <div class="appear">
-          <p>Vous recherchez un Développeur Web ?</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="appear" id="l2">
-          <p>
-            Je serai ravi d'en
-            <a href="mailto:antoinegogceapb@hotmail.fr">discuter</a>
+        <div class="scroll-wrapper">
+          <p data-scroll data-scroll-speed="-3" data-scroll-position="top">
+            please scroll
           </p>
         </div>
-      </div>
-      <div class="wrapper">
-        <div class="appear" id="l3">
-          <p>avec vous</p>
+      </header>
+
+      <section class="about">
+        <div data-scroll data-scroll-speed="-1" class="img1-wrapper">
+          <div class="img img1"></div>
         </div>
+        <div data-scroll data-scroll-speed="3" class="h2-wrapper">
+          <h2>À propos</h2>
+        </div>
+        <p>
+          Après une première carrière dans les Ressources Humaines, j'ai décidé
+          de me reconvertir dans le développement web. Ma formation de niveau
+          Bac+2 a permis de m'initier à la programmation et à la conception web.
+          J'ai pu acquérir de nombreuses compétences en programmation et faire
+          des projets en utilisant des technologies comme HTML, CSS, Javascript,
+          PHP, SQL, etc. J'ai de même été initié à des frameworks comme React JS
+          et Symfony pour PHP. Je suis aujourd'hui à la recherche d'un poste de
+          Développeur Web. N'hésitez pas à me conctacter pour que l'on puisse
+          échanger !
+        </p>
+      </section>
+
+      <div data-scroll class="line-wrapper">
+        <div class="line"></div>
       </div>
-      <div class="img-wrapper">
-        <div class="img img2"></div>
+
+      <section class="skills">
+        <h2 class="title">
+          <span data-scroll data-scroll-speed="1">E</span>
+          <span data-scroll data-scroll-speed="0">x</span>
+          <span data-scroll data-scroll-speed="1">p</span>
+          <span data-scroll data-scroll-speed="2">e</span>
+          <span data-scroll data-scroll-speed="0">r</span>
+          <span data-scroll data-scroll-speed="1">t</span>
+          <span data-scroll data-scroll-speed="2">i</span>
+          <span data-scroll data-scroll-speed="1">s</span>
+          <span data-scroll data-scroll-speed="0">e</span>
+        </h2>
+
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="-2"
+              data-scroll-direction="horizontal"
+            >
+              JavaScript
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="horizontal"
+            >
+              React
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="-6"
+              data-scroll-direction="horizontal"
+            >
+              PHP
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="3"
+              data-scroll-direction="horizontal"
+            >
+              Python
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div data-scroll class="line-wrapper">
+        <div class="line"></div>
       </div>
-    </footer>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="title">
+          <span data-scroll data-scroll-speed="1">P</span>
+          <span data-scroll data-scroll-speed="0">o</span>
+          <span data-scroll data-scroll-speed="1">r</span>
+          <span data-scroll data-scroll-speed="2">t</span>
+          <span data-scroll data-scroll-speed="0">f</span>
+          <span data-scroll data-scroll-speed="1">o</span>
+          <span data-scroll data-scroll-speed="2">l</span>
+          <span data-scroll data-scroll-speed="1">i</span>
+          <span data-scroll data-scroll-speed="0">o</span>
+        </h2>
+        <div class="projects-container">
+          <div data-scroll data-scroll-speed="1" class="project" id="p1">
+            <img src="./assets/img/capture-cine-fana.png" alt="projet 1" />
+            <div class="project-infos">
+              <a
+                href="https://github.com/rubisanto/Cine_Fana_Anto"
+                target="_blank"
+                >Ciné Fana</a
+              >
+              <p>2022</p>
+            </div>
+          </div>
+          <div data-scroll class="project" id="p2">
+            <img src="./assets/img/capture-react-cine.png" alt="projet 2" />
+            <div class="project-infos">
+              <a href="https://rubisanto.github.io/react-cine/" target="_blank"
+                >React Ciné</a
+              >
+              <p>2022</p>
+            </div>
+          </div>
+          <div data-scroll class="project" id="p3">
+            <img src="./assets/img/capture-react-flag.png" alt="projet 3" />
+            <div class="project-infos">
+              <a
+                href="https://github.com/rubisanto/Flags-Site---React"
+                target="_blank"
+                >React Flag</a
+              >
+              <p>2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div data-scroll class="line-wrapper">
+        <div class="line"></div>
+      </div>
+
+      <footer>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p>Vous avez un projet ?</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear" id="l2">
+            <p>
+              Je serai ravi d'en
+              <a href="mailto:antoinegogceapb@hotmail.fr">discuter</a>
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear" id="l3">
+            <p>avec vous</p>
+          </div>
+        </div>
+        <div
+          data-scroll
+          data-scroll-speed="7"
+          data-scroll-position="bottom"
+          class="img-wrapper"
+        >
+          <div class="img img2"></div>
+        </div>
+        <br /><br /><br />
+      </footer>
+    </div>
+
+    <script src="./assets/lib/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
